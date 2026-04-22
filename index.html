@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panell de l'alumnat - DAW</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="light-mode">
+
+  <div class="theme-switch">
+    <button id="modeBtn">Mode fosc</button>
+  </div>
+
+  <main class="container">
+    <h1>Panell de control de l'alumnat</h1>
+
+    <section class="welcome">
+      <h2>Benviguts i benvingudes</h2>
+      <p>Hola, soc <strong>Mauri Romero Simon</strong> i aquest és un exercici de <em>LMSGI</em> per al CFGS 1r ASIX</p>
+    </section>
+
+   <hr>
+
+<section class="schedule">
+<h3>El meu horari (1ASIX - SB)</h3>
+<table>
+<thead>
+<tr>
+<th>Horari</th>
+<th>Dilluns</th>
+<th>Dimarts</th>
+<th>Dimecres</th>
+<th>Dijous</th>
+<th>Divendres</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>08:00 - 09:00</td>
+<td class="ang">ANG [MG]</td>
+<td class="pax">PAX [RF+JA]</td>
+<td class="ipo1">IPO1 [IJ]</td>
+<td class="fm">FM [JA]</td>
+<td class="pax">PAX [RF+JA]</td>
+</tr>
+<tr>
+<td>09:00 - 10:00</td>
+<td class="ang">ANG [MG]</td>
+<td class="pax">PAX [RF+JA]</td>
+<td class="ipo1">IPO1 [IJ]</td>
+<td class="fm">FM [JA]</td>
+<td class="pax">PAX [RF+JA]</td>
+</tr>
+<tr>
+<td>10:00 - 11:00</td>
+<td class="pb">PB (MPO) [JS]</td>
+<td class="iso">ISO/ASO [SB]</td>
+<td class="pb">PB (MPO) [JS]</td>
+<td class="gbd">GBD [JV]</td>
+<td class="iso">ISO/ASO [SB]</td>
+</tr>
+<tr class="break">
+<td>11:00 - 11:30</td>
+<td colspan="5">Pati (furbo)</td>
+</tr>
+<tr>
+<td>11:30 - 12:30</td>
+<td class="pb">PB (MPO) [JS]</td>
+<td class="iso">ISO/ASO [SB]</td>
+<td class="lm">LM [JV]</td>
+<td class="gbd">GBD [JV]</td>
+<td class="iso">ISO/ASO [SB]</td>
+</tr>
+<tr>
+<td>12:30 - 13:30</td>
+<td class="iso">ISO/ASO [SB]</td>
+<td class="tut">TUT [SB]</td>
+<td class="lm">LM [JV]</td>
+<td class="iso">ISO/ASO [SB]</td>
+<td class="gbd">GBD [JV]</td>
+</tr>
+<tr>
+<td>13:30 - 14:30</td>
+<td class="iso">ISO/ASO [SB]</td>
+<td class="ipo1">IPO1 [IJ]</td>
+<td class="rdep">R-DEP-CF</td>
+<td class="iso">ISO/ASO [SB]</td>
+<td class="gbd">GBD [JV]</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<hr>
+
+    <section class="contact">
+      <h3>Actualitzar dades de contacte</h3>
+      <form id="contactForm">
+        <label for="nom">Nom complet:</label>
+        <input type="text" id="nom" placeholder="Ex: Mauri Romero Simon" required>
+
+        <label for="email">Correu electrònic:</label>
+        <input type="email" id="email" placeholder="mromero@institumvm.cat" required>
+
+        <button type="submit" class="btn-desar">Desar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
