@@ -1,58 +1,55 @@
 # Resumen Detallado 
 
-Este proyecto consiste en la creación completa de una página web interactiva que funciona como panel de control para un alumno de 1º de ASIX. La aplicación web incluye la visualización del horario lectivo y un formulario para la actualización de datos personales. 
+Este trabajo consiste en representar nuestro horario escolar de 1r de ASIX usando html, añadiendole estilos como es css y para finalizar un pequeño script que cambie la manera de ver el horario.
 
-Para explicar cómo se ha construido, podemos imaginar la página web como si fuera una **casa**:
-1. El **HTML** representa los planos y los ladrillos (la estructura desnuda).
-2. El **CSS** representa la pintura, la decoración y el diseño de interiores (la estética).
-3. El **JavaScript (con jQuery)** representa la instalación eléctrica y los mecanismos automatizados (los botones que hacen cosas).
-
----
-
-## 1. La Estructura y el Contenido (El "Esqueleto" de la Casa)
-
-Utilizando el lenguaje **HTML**, se ha definido qué información debe aparecer en la pantalla. Es el contenido puro y duro, organizado de manera lógica para que el usuario no se pierda:
-
-* **Identificación del Alumno:** Una sección de bienvenida en la parte superior que presenta formalmente al creador de la página.
-* **El Horario Académico:** El núcleo de la página es una tabla organizada por filas (horas) y columnas (días de la semana) donde se detallan todas las asignaturas del curso. Se ha incluido de forma destacada la hora del patio, unificando las columnas para que visualmente actúe como un descanso en la jornada.
-* **Formulario de Contacto:** Un espacio al final de la página con dos casillas preparadas para que el usuario introduzca su nombre completo y su dirección de correo electrónico, acompañadas de un botón para guardar los cambios.
+Para explicar cómo lo he creado, son 3 pasos sencillos:
+1. Usando **HTML** he creado toda la estructura base, los cuadrados el texto, la posicion del texto, si va en mayusculas o en minusculas, etc.
+2. El **CSS** representa lo que viene siendo el color que le ha dado vida a esa estructura antes creada con html.
+3. Y para acabar el **JavaScript (con jQuery)** representa el pequeño extra que le hemos añadido para la gente que le guste ver las cosas en modo oscuro o en modo brillo.
 
 ---
 
-## 2. El Diseño Visual y la Estética (La "Pintura y Decoración")
+## 1. La Estructura y el Contenido
 
-Para que la página no pareciera un simple documento de texto en blanco y negro, se ha diseñado toda una capa estética utilizando **CSS**. El objetivo ha sido lograr un aspecto moderno, limpio y muy visual:
+Utilizando el lenguaje **HTML**, se ha definido qué información debe aparecer en la pantalla, todos los nombres, los nombres de las asignaturas, los titulos entre lo demas:
 
-* **Efecto de Cristal (*Glassmorphism*):** El cuadro central de la página no es un color sólido; tiene un diseño translúcido que imita al cristal esmerilado, dejando intuir ligeramente el fondo de la pantalla y aportando una sensación de profundidad.
-* **Código de Colores para Asignaturas:** Cada asignatura del horario tiene asignado un color de fondo único y un tono de texto a juego (por ejemplo, tonos verdes, azules o rosados según la materia). Esto permite que, de un solo vistazo, el alumno identifique qué clase le toca sin necesidad de leer el texto completo.
-* **Interactividad Visual (Efecto *Hover*):** La página "reacciona" cuando pasas el ratón por encima de los elementos. Si el usuario pasa el cursor sobre las celdas del horario o sobre los botones, estos cambian suavemente de color o se elevan ligeramente, lo que da la sensación de que la página está "viva".
-* **Adaptabilidad a Móviles:** Se ha configurado el diseño para que, si la página se abre desde un teléfono móvil, el contenido y la tabla del horario se reajusten automáticamente para que no se corte ningún texto y todo siga siendo cómodo de leer.
-
----
-
-## 3. El Mecanismo de Interacción (La "Instalación Eléctrica")
-
-Una página web moderna no solo se mira, también se interactúa con ella. Mediante un pequeño programa escrito en **JavaScript** (apoyado en la herramienta **jQuery**), se ha instalado un interruptor inteligente en la parte superior:
-
-* **El Botón de Cambio de Tema (Claro / Oscuro):** Al hacer clic en el botón "Mode fosc" (Modo oscuro), el programa detecta el clic al instante y cambia por completo las "reglas de estilo" de la página. 
-* **Transformación en Vivo:** Si la página estaba en modo claro (fondo azulado y letras oscuras), pasa instantáneamente a modo oscuro (fondo gris oscuro, casi negro, y letras brillantes) para que no lastime los ojos por la noche. Además, el propio texto del botón cambia de forma automática para decir "Mode clar", indicando al usuario que puede pulsar de nuevo para volver atrás.
+* **Quién soy:** He puesto un saludo arriba del todo para que se sepa que la página es mía y que es para mi clase de 1º de ASIX.
+* **El Horario:** He montado una tabla con sus filas y columnas para meter las asignaturas de la semana. Para la hora del patio (la del "furbo"), he fusionado las celdas para que quede como una barra horizontal que corta el día, simulando el descanso.
+* **Ficha de contacto:** Abajo del todo dejé un par de cajas para que cualquiera pueda poner su nombre y su correo, junto a un botón para guardar los datos.
 
 ---
 
-## 4. Filtros de Seguridad en el Formulario (El "Control de Calidad")
+## 2. CSS 
 
-Para evitar errores humanos cuando un usuario introduce sus datos en las casillas de contacto, se han configurado dos sistemas de control automático directamente en el formulario:
+Para que la página no pareciese un documento soso de Word en blanco y negro, le metí mano al diseño con **CSS** para dejarla mejor visualmente:
 
-* **Campos Obligatorios (`required`):** Se ha colocado un candado digital en las casillas de nombre y correo. Si el usuario intenta pulsar el botón de guardar dejando los campos vacíos, la propia página web se lo impide y le avisa con un mensaje de que es obligatorio rellenarlos.
-* **Detector de Correos Falsos (`type="email"`):** La casilla del correo electrónico tiene un filtro especial. No basta con escribir cualquier texto (como "hola"); el sistema analiza lo que se ha escrito y exige que cumpla con la estructura real de un correo electrónico (es decir, que contenga una arroba `@` y un dominio como `.com` o `.cat`). Si no es así, no permite enviar el formulario.
+* **Efectos:** El cuadro del centro no es un color plano aburrido; tiene un efecto translúcido, como si fuera un cristal borroso. Hace que se intuya el fondo de la pantalla y le da un toque moderno.
+* **Colores para no perderse:** Cada asignatura tiene su propio color de fondo y su letra a juego. Así, de un solo vistazo y sin tener que leer, ya sabes si te toca sistemas, redes o programación por el color de la celda.
+* **Cosas que se mueven** La página reacciona cuando pasas el ratón por encima. Si te pones sobre las asignaturas o los botones, estos cambian suavemente de color o se elevan un poco. Da la sensación de que la web está "viva" y responde a lo que haces.
 
 ---
 
-## 5. Herramientas y Recursos Utilizados
+## 3. El JavaScript 
+Usando **JavaScript** y una ayuda llamada **jQuery**, le he metido un boton arriba del todo:
 
-Para llevar a cabo el desarrollo completo de este trabajo, se han utilizado las siguientes herramientas de trabajo:
+* **El boton de Modo Oscuro:** Cuando haces clic en el botón "Mode fosc", la web se da cuenta al instante y cambia el color.
+* **Cambio:** Si estás con la pantalla en blanco (modo claro) y te molesta a los ojos, le das al botón y se vuelve todo gris oscuro y negro con las letras brillantes para no cansarte mas la vista. Además, el texto del propio botón cambia solo a "Mode clar" para avisarte de que puedes volver a cambiarlo cuando quieras.
 
-* **Visual Studio Code:** El bloc de notas avanzado donde se ha redactado manualmente cada línea de código.
-* **HTML & CSS:** Los estándares que definen la estructura y el diseño visual de internet.
-* **JavaScript & jQuery:** El lenguaje de programación y su biblioteca de ayuda para dar agilidad al botón interactivo.
-* **Inteligencia Artificial (IA):** Utilizada como asistente de apoyo y consulta para el co-diseño de los estilos visuales avanzados del CSS.
+---
+
+## 4. Los Candados del Formulario (El "Control de Trampas")
+
+Para que la gente no ponga cualquier cosa en las casillas de contacto, les he puesto un par de normas automáticas:
+
+* **No vale dejarlo en blanco (`required`):** Le he puesto un aviso obligatorio al nombre y al correo. Si intentas darle al botón de guardar y no has escrito nada, la web responde y te dice que "tienes que rellenar este campo" obligatoriamente.
+* **Detector de correos (`type="email"`):** En la casilla del correo tendras que escribir obligatoriamente un correo, si no no te dejara. El sistema revisa lo que has puesto y, si no ve una arroba (`@`) y un final tipo `.com` o `.cat`, te salta un error y no te deja enviar nada.
+
+---
+
+## 5. Herramientas
+Para hacer todo esto realidad, he usado esto:
+
+* **Visual Studio Code:** El programa donde he escrito todo el código.
+* **HTML y CSS:** El lenguaje para crear la web y el estilo o los colores que he preferido.
+* **JavaScript y jQuery:** El lenguaje de programación y su "ayudante" para que el botón de modo oscuro funcione.
+* **Inteligencia Artificial (IA):** Un ayudante que me ayudo a poder desarrollar con mas amplitud algunas partes del codigo.
