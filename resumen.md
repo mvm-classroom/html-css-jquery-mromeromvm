@@ -37,7 +37,7 @@ Usando **JavaScript** y una ayuda llamada **jQuery**, le he metido un boton arri
 
 ---
 
-## 4. Los Candados del Formulario (El "Control de Trampas")
+## 4. Las normas del formulario
 
 Para que la gente no ponga cualquier cosa en las casillas de contacto, les he puesto un par de normas automáticas:
 
