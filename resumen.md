@@ -1,4 +1,4 @@
-# Resumen Detallado del Proyecto: Panel de Control y Horario Escolar
+# Resumen Detallado 
 
 Este proyecto consiste en la creación completa de una página web interactiva que funciona como panel de control para un alumno de 1º de ASIX. La aplicación web incluye la visualización del horario lectivo y un formulario para la actualización de datos personales. 
 
